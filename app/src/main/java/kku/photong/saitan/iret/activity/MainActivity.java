@@ -16,7 +16,7 @@ import kku.photong.saitan.iret.R;
 import kku.photong.saitan.iret.view.Camera;
 import kku.photong.saitan.iret.view.PopUpsAge;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
     @Override
@@ -26,10 +26,12 @@ public class MainActivity extends AppCompatActivity {
 
         Button scanButton = (Button) findViewById(R.id.scanButton);
         Button testbut = (Button) findViewById(R.id.testbut);
+        Button button_ok = (Button) findViewById(R.id.button_ok);
+
         testbut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,Camera.class));
+                startActivity(new Intent(MainActivity.this, Camera.class));
             }
         });
 
@@ -37,11 +39,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 final Dialog dialog = new Dialog(MainActivity.this);
-                //dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
                 dialog.setContentView(R.layout.popups_age);
                 dialog.show();
+                dialog.setCancelable(true);
 
-                //dialog.setCancelable(true);
 /*                Button button1 = (Button)dialog.findViewById(R.id.button1);
                 button1.setOnClickListener(new View.OnClickListener() {
                     public void onClick(View v) {
@@ -66,4 +68,11 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         return super.onCreateOptionsMenu(menu);
     }
+
+    @Override
+    public void onClick(View v) {
+
+    }
+
+
 }

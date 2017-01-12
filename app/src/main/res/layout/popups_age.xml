@@ -37,15 +37,16 @@
         android:layout_height="match_parent">
 
         <Button
+
             android:id="@+id/button_ok"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:height="60dp"
+            android:layout_height="60dp"
             android:text="OK"
             android:textSize="20sp"
             android:textColor="@color/colorAccent"
-            android:theme="@style/MyButton"/>
+            android:theme="@style/MyButton"
+            android:layout_alignParentRight="true"/>
 
     </LinearLayout>
 
