@@ -66,18 +66,6 @@
         android:text="@string/app_logo2"
         android:textSize="30dp" />
 
-    <Button
-        android:id="@+id/testbut"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="test"
-        android:textColor="@color/colorWrith"
-        android:textSize="15dp"
-        android:theme="@style/MyButton"
-        android:layout_marginTop="28dp"
-        android:layout_alignTop="@+id/multi_action"
-        android:layout_centerHorizontal="true" />
-
 
     <!-- <Button
          style="@style/Widget.AppCompat.Button.Borderless"
