@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background"
     tools:context="kku.photong.saitan.iret.activity.MainActivity">
 
 
@@ -30,28 +31,6 @@
     />
     </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_logo2"
-        android:textSize="30dp"
-        android:id="@+id/textView"
-        android:layout_marginBottom="91dp"
-        android:layout_above="@+id/button"
-        android:layout_toEndOf="@+id/logo" />
-
-    <TextView
-        android:id="@+id/logo"
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_logo"
-        android:textSize="70dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="16dp"
-        android:layout_alignBottom="@+id/textView"
-        android:layout_alignParentStart="true" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -59,12 +38,33 @@
         android:height="100dp"
         android:text="@string/app_scan"
         android:textColor="@color/colorWrith"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:theme="@style/MyButton"
-        android:id="@+id/button"
+        android:id="@+id/scanButton"
         android:layout_marginBottom="182dp"
         android:layout_alignBottom="@+id/multi_action"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_logo"
+        android:textSize="70dp"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="90dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_logo2"
+        android:textSize="30dp"
+        android:id="@+id/textView"
+        android:layout_marginBottom="99dp"
+        android:layout_above="@+id/scanButton"
+        android:layout_alignStart="@+id/scanButton"
+        android:layout_marginStart="54dp" />
 
 
     <!-- <Button
