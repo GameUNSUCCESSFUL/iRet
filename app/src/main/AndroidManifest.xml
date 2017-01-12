@@ -26,7 +26,7 @@
         <activity
             android:name="com.afollestad.materialcamera.CaptureActivity2"
             android:theme="@style/MaterialCamera.CaptureActivity" />
-        <activity android:name=".FragmentActivity"></activity>
+        <activity android:name=".view.Camera"></activity>
     </application>
 
 </manifest>
