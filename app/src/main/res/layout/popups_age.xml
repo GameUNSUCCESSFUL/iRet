@@ -12,8 +12,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".activity.MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:context=".activity.MainActivity">
 
 
     <TextView
@@ -23,6 +22,7 @@
         android:textSize="18sp" />
 
     <biz.kasual.materialnumberpicker.MaterialNumberPicker
+        android:id="@+id/numpicker"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:npDefaultValue="25"

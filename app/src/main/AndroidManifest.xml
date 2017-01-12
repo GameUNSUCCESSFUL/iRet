@@ -17,8 +17,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".view.PopUpsAge"></activity>
-
         <!-- Register library Activities -->
         <activity
             android:name="com.afollestad.materialcamera.CaptureActivity"

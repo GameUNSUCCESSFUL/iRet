@@ -8,4 +8,8 @@
     <string name="alert_simple_title">Simple MaterialNumberPicker</string>
     <string name="alert_custom_title">Custom MaterialNumberPicker</string>
     <string name="picker_value">Picked value %d</string>
+    <string name="shareLocationPrompt">This app wants to access your location.</string>
+    <string name="agree">Agree</string>
+    <string name="disagree">Disagree</string>
+    <string name="more_info">More Info</string>
 </resources>
